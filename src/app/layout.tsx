@@ -12,7 +12,7 @@ export default function RootLayout({
         <title>Shashwata Mandal</title>
       </head>
       <body className="bg-slate-950 text-slate-200 min-h-screen">
-        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-4 pb-12">
           <Navbar />
           {children}
         </main>
