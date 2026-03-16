@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///home/smokemsi/Documents/Repository/smoke275.github.io/src/app/page.tsx"],"sourcesContent":["export default function Home() {\n  return (\n    <article className=\"prose lg:prose-xl mt-12\">\n      <h1>Welcome to my Modern Portfolio</h1>\n      <p>\n        I am currently rebuilding this page with <strong>Next.js</strong> and <strong>Tailwind CSS</strong>, preserving all my previous features like videos, publications, and projects but modernizing the architecture.\n      </p>\n      \n      <h2>Experience</h2>\n      <p>Content coming soon...</p>\n\n      <h2>Publications</h2>\n      <p>Content coming soon...</p>\n    </article>\n  );\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAQ,WAAU;;0BACjB,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;;oBAAE;kCACwC,8OAAC;kCAAO;;;;;;oBAAgB;kCAAK,8OAAC;kCAAO;;;;;;oBAAqB;;;;;;;0BAGrG,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;0BAEH,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
+}
