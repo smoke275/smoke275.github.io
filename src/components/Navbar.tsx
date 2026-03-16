@@ -11,6 +11,7 @@ export default function Navbar() {
     { href: '/', label: 'About' },
     { href: '/publications', label: 'Publications' },
     { href: '/projects', label: 'Projects' },
+    { href: '/media', label: 'Robotics & Media' },
   ];
 
   return (
@@ -40,6 +41,14 @@ export default function Navbar() {
         ))}
         <a 
           href="/resources/resume/Resume_SMandal_RSE_V4.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="px-1 py-2 text-slate-400 hover:text-slate-200 transition-colors"
+        >
+          Resume
+        </a>
+        <a 
+          href="/resources/resume/CV_ShashwataMandal_V1.pdf" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="px-1 py-2 text-slate-400 hover:text-slate-200 transition-colors"

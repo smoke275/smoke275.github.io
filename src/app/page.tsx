@@ -1,6 +1,6 @@
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
-import { DownloadCloud, Github, CodeSquare, BrainCircuit, MonitorDot } from "lucide-react";
+import { DownloadCloud, Github, CodeSquare, BrainCircuit, MonitorDot, Linkedin, GraduationCap, FileText } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,15 +20,27 @@ export default function Home() {
                 <DownloadCloud className="w-5 h-5" />
                 Resume
               </a>
+              <a href="/resources/resume/CV_ShashwataMandal_V1.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-slate-700 text-base font-semibold rounded-xl text-slate-300 bg-slate-900 hover:bg-slate-800 transition-all active:scale-95">
+                <FileText className="w-5 h-5" />
+                CV
+              </a>
               <a href="https://github.com/smoke275" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-slate-700 text-base font-semibold rounded-xl text-slate-300 bg-slate-900 hover:bg-slate-800 transition-all active:scale-95">
                 <Github className="w-5 h-5" />
                 GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/shashwata-mandal/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-slate-700 text-base font-semibold rounded-xl text-slate-300 bg-slate-900 hover:bg-slate-800 transition-all active:scale-95">
+                <Linkedin className="w-5 h-5" />
+                LinkedIn
+              </a>
+              <a href="https://scholar.google.com/citations?user=Pr5dMC8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-slate-700 text-base font-semibold rounded-xl text-slate-300 bg-slate-900 hover:bg-slate-800 transition-all active:scale-95">
+                <GraduationCap className="w-5 h-5" />
+                Google Scholar
               </a>
             </div>
           </div>
           <div className="w-56 h-56 sm:w-72 sm:h-72 lg:w-[400px] lg:h-[400px] rounded-full border-4 lg:border-8 border-slate-800 shadow-2xl relative overflow-hidden shrink-0">
             <Image 
-              src="/resources/photos/PXL_20250822_235417590.jpg" 
+              src="/resources/photos/profile/PXL_20250822_235417590.jpg" 
               alt="Shashwata Mandal" 
               fill 
               className="object-cover" 

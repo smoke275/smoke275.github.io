@@ -1,5 +1,5 @@
 import FadeIn from "@/components/FadeIn";
-import { Wrench, Plane, Cpu, Github, Activity, Map, Bot } from "lucide-react";
+import { Plane, Cpu, Github, Activity, Map, Bot } from "lucide-react";
 
 export const metadata = {
   title: "Projects | Shashwata Mandal",
@@ -111,17 +111,6 @@ export default function ProjectsPage() {
               <span className="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full font-medium">OpenCV</span>
             </div>
           </a>
-        </div>
-
-        {/* Media Block */}
-        <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl relative overflow-hidden group border-dashed hover:border-slate-700 transition-colors">
-          <div className="flex items-center gap-3 mb-4">
-            <Wrench className="text-slate-500 w-6 h-6" />
-            <h2 className="text-2xl font-bold text-slate-300">Robotics Builds & Media</h2>
-          </div>
-          <p className="text-slate-400 leading-relaxed">
-            Stay tuned! I'll be adding galleries of my latest personal robotics builds, pictures, and live video demonstrations involving Gazebo/MuJoCo simulations and PX4 flight tests shortly.
-          </p>
         </div>
 
       </div>
