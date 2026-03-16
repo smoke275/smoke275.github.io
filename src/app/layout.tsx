@@ -11,7 +11,7 @@ export default function RootLayout({
       <head>
         <title>Shashwata Mandal</title>
       </head>
-      <body className="bg-white text-gray-900 min-h-screen">
+      <body className="bg-slate-950 text-slate-200 min-h-screen">
         <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Navbar />
           {children}

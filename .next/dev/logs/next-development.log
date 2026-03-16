@@ -1,2 +1,17 @@
-[00:00:00.306] Server  LOG     ✓ Ready in 186ms
-[00:00:02.867] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.311] Server  LOG     ✓ Ready in 189ms
+[00:00:03.498] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.005] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:57.266] Server  LOG     ✓ Compiled in 70ms
+[00:00:57.369] Browser ERROR   ./src/app/page.tsx:115:1
+Parsing ecmascript source code failed
+  113 |     </article>
+  114 |   );
+> 115 | }
+      | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+[00:03:13.913] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:17.474] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:18.317] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:26.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
