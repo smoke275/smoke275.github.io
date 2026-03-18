@@ -12,6 +12,7 @@ export const metadata = {
 export default function MediaPage() {
   const roboticsDir = path.join(process.cwd(), 'public', 'resources', 'photos', 'robotics');
   let images: string[] = [];
+  let captions: Record<string, string> = {};
   
   try {
     if (fs.existsSync(roboticsDir)) {
@@ -20,6 +21,15 @@ export default function MediaPage() {
         const ext = path.extname(file).toLowerCase();
         return ['.jpg', '.jpeg', '.png', '.gif', '.webp'].includes(ext);
       });
+
+      const captionsPath = path.join(roboticsDir, 'captions.json');
+      if (fs.existsSync(captionsPath)) {
+        try {
+          captions = JSON.parse(fs.readFileSync(captionsPath, 'utf8'));
+        } catch (e) {
+          console.error("Error reading captions.json", e);
+        }
+      }
     }
   } catch (error) {
     console.error("Error reading robotics directory", error);
@@ -36,14 +46,20 @@ export default function MediaPage() {
         {images.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {images.map((img, index) => (
-              <div key={index} className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors group shadow-lg">
-                <Image
-                  src={`/resources/photos/robotics/${img}`}
-                  alt={`Robotics media ${index + 1}`}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+              <div key={index} className="flex flex-col gap-3">
+                <div className="relative aspect-video rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-500/50 transition-colors group shadow-lg">
+                  <Image
+                    src={`/resources/photos/robotics/${img}`}
+                    alt={captions[img] || `Robotics media ${index + 1}`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized={img.toLowerCase().endsWith('.gif')}
+                  />
+                </div>
+                {captions[img] && (
+                  <p className="text-sm text-slate-400 text-center px-2">{captions[img]}</p>
+                )}
               </div>
             ))}
           </div>
